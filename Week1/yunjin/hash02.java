@@ -21,7 +21,7 @@ class hash02 {
         String answer = "";
         HashMap<String, Integer> hm = new HashMap<>();
         for (String part : participant) {
-            hm.put(part, hm.getOrDefault(part, 0));
+            hm.put(part, hm.getOrDefault(part, 0) + 1);
         }
         for (String com : completion) {
             hm.put(com, hm.get(com) - 1);
