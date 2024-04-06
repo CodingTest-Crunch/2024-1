@@ -1,5 +1,3 @@
-package Week1.yunjin;
-
 import java.util.*;
 
 class hash02 {
