@@ -13,3 +13,8 @@
 # 4/12
 [프로그래머스: 네트워크](https://school.programmers.co.kr/learn/courses/30/lessons/43162)
 - DFS
+
+# 4/13
+[프로그래머스: 같은 숫자는 싫어](https://school.programmers.co.kr/learn/courses/30/lessons/12906)
+- ArrayList<Integer> -> int[] 변환
+- stack.pop() -> 스택이 empty일때는 오류! => 조건문으로 예외처리 해줘야함
