@@ -18,3 +18,8 @@
 [프로그래머스: 같은 숫자는 싫어](https://school.programmers.co.kr/learn/courses/30/lessons/12906)
 - ArrayList<Integer> -> int[] 변환
 - stack.pop() -> 스택이 empty일때는 오류! => 조건문으로 예외처리 해줘야함
+
+# 4/14
+[BOJ 2178: 미로 탐색](https://www.acmicpc.net/problem/2178)
+- dfs
+- bfs -> 시간초과
