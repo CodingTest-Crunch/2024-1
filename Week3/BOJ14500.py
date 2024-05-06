@@ -35,16 +35,18 @@ def solution(y,x, dsum, cnt) :
 
 def exception(y,x): 
     global maxValue
-    # dx,dy를 각 3개씩 사용할 수 있도록 처리 
-    # ex - 상하좌, 상하우, 좌우상, 좌우하
     arr = []
-    for i in range(4) :   
+    for i in range(4) : 
         nx,ny = x + dx[i], y+dy[i]
         if 0<=nx<M and 0<=ny<N : 
             arr.append(tetris[ny][nx])
+    # 네 방향 모두 범위 안에 들어오면
     if len(arr) == 4 : 
+        # 오름차순으로 정렬해서 
         arr.sort(reverse=True)
-        arr.pop()
+        # 제일 작은 수 삭제 
+        # remove 쓰면 - remove(3) : 배열에서 가장 첫번째로 나오는 3 삭제
+        arr.pop(0)
         maxValue = max(maxValue, sum(arr)+tetris[y][x])
     elif len(arr) == 3 : 
         maxValue = max(maxValue, sum(arr)+tetris[y][x])
