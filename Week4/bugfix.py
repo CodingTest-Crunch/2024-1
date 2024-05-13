@@ -6,7 +6,7 @@ def solution(a):
     for i in range(len(a)):
         curSum = 0
         for j in range(len(a)):
-            curSum += abs(a[i] - a[j])
+            curSum += abs(a[i] - a[j]) #abs(a[j] - a[j]) -> abs(a[i] - a[j])
         if curSum < minimalSum:
             minimalSum = curSum
             indexOfMinimum = i
